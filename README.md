@@ -1,0 +1,2 @@
+# Proyecto Integrador
+Proyecto de la materia de matemáticas discretas de la carrera en tecnologías de la información, aplicación de metodos de encriptación, utilizando la multiplicación de matrices, código Unicode y operaciones aritméticas, para generar un texto cifrado.
