@@ -10,7 +10,9 @@ class EncriptadorControllerTest {
     @Test
     @DisplayName("Generar Matriz a partir del mensaje hola")
     void generarMatrizPrueba1() {
-        int [][] matrizGenerada = encriptador.generarMatriz("hola");
+        String mensaje = "hola";
+        int columnas = encriptador.obtenerColumnas(mensaje);
+        int [][] matrizGenerada = encriptador.generarMatriz(mensaje, columnas);
         int [][] matrizResultado = {{8,1},
                                     {15,0},
                                     {12,0}};
@@ -26,7 +28,9 @@ class EncriptadorControllerTest {
     @Test
     @DisplayName("Generar Matriz a partir del mensaje hola que tal amix")
     void generarMatrizPrueba2() {
-        int [][] matrizGenerada = encriptador.generarMatriz("hola que tal amix");
+        String mensaje = "hola que tal amix";
+        int columnas = encriptador.obtenerColumnas(mensaje);
+        int [][] matrizGenerada = encriptador.generarMatriz(mensaje, columnas);
         int [][] matrizResultado = {{8,1,21,20,0,9},
                                     {15,0,5,1,1,24},
                                     {12,17,0,12,13,0}};
@@ -50,5 +54,15 @@ class EncriptadorControllerTest {
         }
 
     }
+
+    @Test
+    @DisplayName("Generar Llave Aleatoria")
+    void encriptarMensaje(){
+        EncriptadorController encriptar = new EncriptadorController();
+        encriptar.encriptarMensaje();
+
+    }
+
+
 
 }

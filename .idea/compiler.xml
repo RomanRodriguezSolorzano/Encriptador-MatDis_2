@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Encriptador-MatDis_2" />
         <module name="Encriptador-MatDis-2" />
       </profile>
     </annotationProcessing>

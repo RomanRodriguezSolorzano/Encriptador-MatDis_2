@@ -5,6 +5,13 @@ public class Encriptador {
     private int[][] matrizMensaje;
     private int[][] llave;
 
+    private int [][] matrizCifrada;
+
+    private int[][] unionMatrices;
+
+    private int columnas;
+
+
     public Encriptador() {
 
     }
@@ -46,5 +53,29 @@ public class Encriptador {
 
     public void setLlave(int[][] llave) {
         this.llave = llave;
+    }
+
+    public int getColumnas() {
+        return columnas;
+    }
+
+    public void setColumnas(int columnas) {
+        this.columnas = columnas;
+    }
+
+    public int[][] getUnionMatrices() {
+        return unionMatrices;
+    }
+
+    public void setUnionMatrices(int[][] unionMatrices) {
+        this.unionMatrices = unionMatrices;
+    }
+
+    public int[][] getMatrizCifrada() {
+        return matrizCifrada;
+    }
+
+    public void setMatrizCifrada(int[][] matrizCifrada) {
+        this.matrizCifrada = matrizCifrada;
     }
 }
