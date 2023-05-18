@@ -6,6 +6,7 @@ public class main {
     public static void main(){
         EncriptadorController encriptar = new EncriptadorController();
         encriptar.encriptarMensaje();
+
     }
 
 }

@@ -2,12 +2,12 @@ package Encriptador.model;
 
 public class Encriptador {
     private String mensaje, mensajeEncriptado;
-    private int[][] matrizMensaje;
-    private int[][] llave;
+    private double[][] matrizMensaje;
+    private double[][] llave;
 
-    private int [][] matrizCifrada;
+    private double [][] matrizCifrada;
 
-    private int[][] unionMatrices;
+    private double[][] unionMatrices;
 
     private int columnas;
 
@@ -16,7 +16,7 @@ public class Encriptador {
 
     }
 
-    public Encriptador(String mensaje, String mensajeEncriptado, int[][] matrizMensaje, int[][] llave) {
+    public Encriptador(String mensaje, String mensajeEncriptado, double[][] matrizMensaje, double[][] llave) {
         this.mensaje = mensaje;
         this.mensajeEncriptado = mensajeEncriptado;
         this.matrizMensaje = matrizMensaje;
@@ -39,19 +39,19 @@ public class Encriptador {
         this.mensajeEncriptado = mensajeEncriptado;
     }
 
-    public int[][] getMatrizMensaje() {
+    public double[][] getMatrizMensaje() {
         return matrizMensaje;
     }
 
-    public void setMatrizMensaje(int[][] matrizMensaje) {
+    public void setMatrizMensaje(double[][] matrizMensaje) {
         this.matrizMensaje = matrizMensaje;
     }
 
-    public int[][] getLlave() {
+    public double[][] getLlave() {
         return llave;
     }
 
-    public void setLlave(int[][] llave) {
+    public void setLlave(double[][] llave) {
         this.llave = llave;
     }
 
@@ -63,19 +63,19 @@ public class Encriptador {
         this.columnas = columnas;
     }
 
-    public int[][] getUnionMatrices() {
+    public double[][] getUnionMatrices() {
         return unionMatrices;
     }
 
-    public void setUnionMatrices(int[][] unionMatrices) {
+    public void setUnionMatrices(double[][] unionMatrices) {
         this.unionMatrices = unionMatrices;
     }
 
-    public int[][] getMatrizCifrada() {
+    public double[][] getMatrizCifrada() {
         return matrizCifrada;
     }
 
-    public void setMatrizCifrada(int[][] matrizCifrada) {
+    public void setMatrizCifrada(double[][] matrizCifrada) {
         this.matrizCifrada = matrizCifrada;
     }
 }
