@@ -78,4 +78,6 @@ public class Encriptador {
     public void setMatrizCifrada(double[][] matrizCifrada) {
         this.matrizCifrada = matrizCifrada;
     }
+
+
 }
